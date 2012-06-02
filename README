@@ -31,14 +31,6 @@ Or, to delete after:
 
 (One note: ppss by default recurses through all of the subdirectories of the directory specified by the '-d' option.  More info can be found in the ppss docs.)
 
-flac2alac uses flac and ffmpeg to decode/encode the audio files. On Ubuntu, you can install them with
+flac2alac depends on some various libraries. On OSX, you can install them with
 
- sudo apt-get install flac ffmpeg
-
-Also required is the mpeg4ip package that includes the mp4tags utility, fetch it from here:
-
- cvs -d:pserver:anonymous@mpeg4ip.cvs.sourceforge.net:/cvsroot/mpeg4ip login 
- cvs -d:pserver:anonymous@mpeg4ip.cvs.sourceforge.net:/cvsroot/mpeg4ip co -P mpeg4ip
-
-(their URL is http://mpeg4ip.sourceforge.net/downloads/index.php but they appear to have removed all tarball downloads.)
-
+ brew install flac ffmpeg mp4v2
